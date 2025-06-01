@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Feliz Aniversário, Meu Amor!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="hearts" id="hearts"></div>
+  <div class="container">
+    <h1>Feliz Aniversário, Meu Amor! 🎂💖</h1>
+    <p>
+        Hoje é o seu dia meu amor, e eu não podia deixar passar em branco o quanto eu sou grato por ter você na minha vida. <br>
+        São <b>3 anos juntos</b> e mesmo assim eu ainda fico bobo com o teu jeito único, com o quanto você é linda, cheirosa e charmosa, sério, você é simplesmente incrível.
+        <br>
+        Lembro até hoje do dia em que a gente se conheceu, eu com medo de você querendo fugir pro banheiro e o Hugo me arrastando pra falar com você, ainda bem que ele fez isso, né? Porque foi ali que tudo começou, amor, e que sorte a minha! Você é uma pessoa forte, que corre atrás das coisas, que não desiste fácil. Eu admiro muito isso em você, e além de tudo, ainda é engraçada, divertida e me faz sentir bem só de estar perto.
+        <br>
+        Enfim, só queria te lembrar o quanto eu te amo e o quanto você é especial pra mim. Que seu aniversário seja tão lindo quanto você e que esse novo ciclo venha com muita alegria, conquistas e, claro, com a gente juntinhos em mais momentos inesquecíveis, amorzinhoo.
+        <br><br>
+        <b>Te amo mais que tudo meu amor, feliz aniversário minha viduska! 🎉💖</b>
+    </p>
+    <button class="btn-download" onclick="baixarArquivo()">Baixar uma historinha em C 💻</button>
+  </div>
+  <script>
+    // Função para baixar o arquivo em C
+    function baixarArquivo() {
+      // Troque 'seuarquivo.c' pelo nome real do arquivo
+      const link = document.createElement('a');
+      link.href = 'presentinho.c';
+      link.download = 'presentinho.c';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+
+    // Corações animados
+    function criarCoracao() {
+      const hearts = document.getElementById('hearts');
+      const heart = document.createElement('div');
+      heart.className = 'heart';
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.animationDuration = (4 + Math.random() * 3) + 's';
+      heart.innerHTML = `
+        <svg viewBox="0 0 32 29.6">
+          <path d="M23.6,0c-2.7,0-5.1,1.3-6.6,3.3C15.5,1.3,13.1,0,10.4,0C4.7,0,0,4.7,0,10.4
+            c0,6.1,5.2,11.1,13.1,18.2l2.3,2.1l2.3-2.1C26.8,21.5,32,16.5,32,10.4C32,4.7,27.3,0,23.6,0z"/>
+        </svg>
+      `;
+      hearts.appendChild(heart);
+      setTimeout(() => heart.remove(), 7000);
+    }
+    setInterval(criarCoracao, 400);
+  </script>
+</body>
+</htmlFeliz aniversário, meu ammeu amnão podia deixar passar em branco oanto u s bem que ele fez isso, né? Porque foi ali que tudo começou amor, e que sorte a minha, você é uma pessoaas, que não desiste fácil eu admiro muito isso em você, e além de tudo, ainda é engraçada, divertquanto você e que esse novo ciclo venha com muita alegria, conquistas e claro, com a gente juntinhos em mais mentoesquecíveis amorzhoo.
+
+Te amo mas or, feliz aniversário minha viduska! 🎉💖      
+    }
+    setInterval(criarCoracao, 400);
+  </script>
+</body>
+</html>
